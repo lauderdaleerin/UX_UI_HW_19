@@ -1,15 +1,14 @@
 :root {
-    --green: #2DDD29;
-    --pink: #F2357B;
-    --orange: #F28705;
-    --sand: #F8E8DA;
+    --dkorange: #FE905B;
+    --medorange: #FCB37E;
+    --ltorange: #FEEBCD;
     scroll-behavior: smooth !important;
 }
 
 
 body {
     font-family: Jura;
-    background-color: var(--sand);
+    background-color: var(--ltorange);
 }
 
 
@@ -39,7 +38,7 @@ h3 {
 
 
 a:link, a:visited {
-    color: white;
+    color: black;
     text-decoration: none;
     font-family: Jura;
     font-size: 23px;
@@ -54,25 +53,22 @@ p {
 }
 
 
-.orangerad {
-    background-image: radial-gradient(var(--orange), rgba(215, 111, 0, 0), transparent 100px);
+.medorangerad {
+    background-image: radial-gradient(var(--medorange), rgba(215, 111, 0, 0), transparent 100px);
 }
 
-.pinkrad {
-    background-image: radial-gradient(var(--pink), rgba(215, 0, 186, 0), transparent 100px);
+.dkorangerad {
+    background-image: radial-gradient(var(--dkorange), rgba(215, 0, 186, 0), transparent 100px);
 }
 
-.greenrad {
-    background-image: radial-gradient(var(--green), rgba(21, 215, 0, 0), transparent 100px);
-}
 
-.greenlinr {
-    background-image: linear-gradient(to left, rgba(45, 221, 41, 0.21), rgba(45, 221, 41, 0));
+.dkorangelinr {
+    background-image: linear-gradient(to left, var(--dkorange), rgba(221, 173, 41, 0));
     padding: 10px;
 }
 
 .greenlin {
-    background-image: linear-gradient(to right, rgba(45, 221, 41, 0.21), rgba(45, 221, 41, 0));
+    background-image: linear-gradient(to right, var(--dkorange), rgba(221, 173, 41, 0));
     padding: 10px;
 }
 
@@ -112,7 +108,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: black;
+    background-color: var(--dkorange);
+    border: solid 1px black;
     padding:0;
     margin: 40px 0 10px 0;
     height: 50px;
@@ -130,7 +127,7 @@ p {
 
 
 #active {
-    text-decoration: underline solid 5px var(--orange);
+    text-decoration: underline solid 5px var(--ltorange);
 }
 
 .content {
@@ -166,26 +163,23 @@ p {
 
 .card {
     display: flex;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: var(--dkorange);
     border-radius: 8px;
     margin: auto;
     padding:10px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     max-width: 800px;
     height:fit-content;
+    border: solid 1px black;
 }
 
 
-p.card {
-    margin-block-start: none;
-    margin-block-end:none;
-}
 
 .btn {
     display: flex;
     justify-content: center;
-    background-color: var(--green);
+    background-color: var(--medorange);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     font-family: 'Nova Round';
@@ -243,7 +237,7 @@ a.btn {
 
 .home {
     display: flex;
-    background-color: var(--pink);
+    background-color: var(--medorange);
     padding: 10px;
     border-radius: 8px;
     border: solid 1px black;
@@ -255,7 +249,7 @@ a.btn {
 .mail {
     display: flex;
     justify-self: center;
-    background-color: var(--green);
+    background-color: var(--medorange);
     padding: 10px;
     border-radius: 8px;
     border: solid 1px black;
@@ -266,7 +260,7 @@ a.btn {
 
 .linkedin {
     display: flex;
-    background-color: var(--orange);
+    background-color: var(--medorange);
     padding: 10px;
     border-radius: 8px;
     border: solid 1px black;
