@@ -40,7 +40,7 @@
 
         
 
-        <section id="about">
+        <section class="fadeonload" id="about">
             <div class="about-content">
                 <div class="content">
                     <div class="hero">
@@ -56,7 +56,7 @@
                     </div>
                 </div>
 
-                <a class="btn" href="">
+                <a class="btn" href="#portfolio">
                     View My Work
                 </a>
 
@@ -70,13 +70,13 @@
 
         <section id="my-skills">
             <!--this will go in the header when on its own page-->
-            <div class="title-circles">
+            <div class="title-circles fadein">
                 <div class="circle medorangerad"></div>
                 <div class="circle dkorangerad"></div>
                 <div class="circle medorangerad"></div>
             </div>
 
-            <div class="title">
+            <div class="title fadein">
                 <h1 class="titletxt">Skills</h1> 
             </div>
             <!--end of header-->
@@ -84,38 +84,38 @@
             <!--beginning of section-->
             <div class="skills">
 
-                <div class="skill-card pm">
+                <div class="skill-card pm fadein">
                     <h2 class="dkorangelinr">Project Management</h2>
                     <img class= "skillimg" src="images/project-management.png" alt="Pixel happy files icon">
                     <p>Experience in managing multiple projects simultaneously and ensuring deadlines are met.</p>
                 </div>
 
-                <div class="skill-card com">
+                <div class="skill-card com fadein">
                     <h2 class="medorangelin">Communication</h2>
                     <img class= "skillimg" src="images/communication.png" alt="Pixel chat bubbles icon">
                     <p>Able to effectively communicate with clients, team members, and stakeholders digitally and face-to-face.</p>
                 </div>
 
-                <div class="skill-card cps">
+                <div class="skill-card cps fadein">
                     <h2 class="dkorangelinr">Creative Problem-Solving</h2>
                     <img class= "skillimg" src="images/problem-solving.png" alt="Pixel paintbrush and pencil icon">
                     <p>Adept and trained at finding creative solutions to complex problems.</p>
                 </div>
 
-                <div class="skill-card ds">
+                <div class="skill-card ds fadein">
                     <h2 class="medorangelin">Design Software</h2>
                     <img class= "skillimg" src="images/design-software.png" alt="Pixel drawing tablet icon">
                     <p>Proficient in Figma, Adobe Creative Cloud, and Miro as well as project management software such as Google Drive and Trello.</p>
                 </div>
 
-                <div class="skill-card cc">
+                <div class="skill-card cc fadein">
                     <h2 class="dkorangelinr">Code Conversational</h2>
                     <img class= "skillimg" src="images/code-conversational.png" alt="Pixel coding window icon">
                     <p>Working knowledge of HTML, CSS, JavaScript, and Bootstrap as well as version control through Github.</p>
                 </div>
 
             </div>
-            <div class="card" id="ed">
+            <div class="card fadein" id="ed">
                 <h3>Education</h3>
                 <ul>
                     <li><span class="underline">UX/UI Bootcamp Certificate,</span> University of Oregon, 2023</li>
@@ -123,25 +123,25 @@
                 </ul>
             </div>
 
-            <button type="button" class="btn">Download Resume</button>
+            <a class="btn fadein" href="EL-Resume.pdf" target="_blank">Download Resume</a>
 
-            <img class="footerimg" src="images/skills-footerimg.png">
+            <img class="footerimg fadein" src="images/skills-footerimg.png">
 
         </section>
 
 
-        <br><br>
+
 
 
         <section id="portfolio">
             <!--this will go in the header when on its own page-->
-            <div class="title-circles">
+            <div class="title-circles fadein">
                 <div class="circle medorangerad"></div>
                 <div class="circle dkorangerad"></div>
                 <div class="circle medorangerad"></div>
             </div>
 
-            <div class="title">
+            <div class="title fadein">
                 <h1 class="titletxt">Portfolio</h1> 
             </div>
             <!--end of header-->
@@ -149,7 +149,7 @@
             <!--beginning of section-->
             <div class="portfolio">
 
-                <div class="portfolio-card">
+                <div class="portfolio-card fadein">
                     <div class="t1">
                         <h2 class="pheader">Placeholder</h2>
                         <h3>Final Project goes here</h3>
@@ -158,7 +158,7 @@
                         <img class="i1" src="images/blank-button.png" alt="Blank app mockup">
                 </div>
                 
-                <div class="portfolio-card" id="pmba">
+                <div class="portfolio-card fadein" id="pmba">
                     
                         <img class="i2" src="images/pmba-button-m.png" alt="PMBA mobile website mockup">
                         <img class="i2w" src="images/pmba-button.png" alt="PMBA mobile website mockup">
@@ -169,7 +169,7 @@
                     </div>
                 </div>   
 
-                <div class="portfolio-card">
+                <div class="portfolio-card fadein">
                     <div class="t3">
                         <h2 class="pheader">FlavorSavor</h2>
                         <h3>User Research & Mid Fidelity Wireframe</h3>
@@ -182,7 +182,7 @@
 
 
 
-        <footer>
+        <footer class="fadein">
 
             <img class="footerimg" src="images/portfolio-footerimg.png" alt="Pixel painting icon">
 
@@ -193,13 +193,13 @@
                 <li class="footer-btn">
                     <img class="mail" src="images/mail-icon.png" alt="Contact">
                 </li>
-                <li class="footer-btn">
-                    <a href="https://www.linkedin.com/in/erin-lauderdale-505a34195/" target="_blank">
+                <li>
+                    <a class="footer-btn" href="https://www.linkedin.com/in/erin-lauderdale-505a34195/" target="_blank">
                          <img class="linkedin" src="images/linkedin-icon.png" alt="Linkedin">
                     </a>     
                 </li>
-                <li class="footer-btn">
-                    <a href="#header">
+                <li>
+                    <a class="footer-btn" href="#header">
                          <img class="up" src="images/up-icon.png" alt="Scroll to top">
                     </a>
                 </li>
@@ -207,7 +207,10 @@
 
 
         </footer>
-
+                <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+        crossorigin="anonymous"></script>
+        <script src ="script.js"></script>
     </body>
 
 </html>

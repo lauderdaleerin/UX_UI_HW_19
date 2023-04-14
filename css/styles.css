@@ -56,6 +56,11 @@ p {
 
 }
 
+.fadeonload, .fadein {
+        opacity:0;
+    }
+    
+
 
 .medorangerad {
     background-image: radial-gradient(var(--medorange), rgba(215, 111, 0, 0), transparent 100px);
@@ -228,7 +233,7 @@ a.btn {
 
 .footerimg {
     display:block;
-    margin: 40px auto 40px auto;
+    margin: 40px auto 100px auto;
     width: 50px;
 }
 
