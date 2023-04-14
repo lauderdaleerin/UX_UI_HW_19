@@ -13,7 +13,7 @@
 
     <body>
 
-        <header>
+        <header id="header">
 
             <nav>
                <ul class="navbar">
@@ -40,27 +40,29 @@
 
         
 
-        <section class="about">
-            <div class="content">
-                <div class="hero">
-                    <img class="heroimg" src="images/about-image.png" alt="Erin smiles for the camera">
-                    <h2 class="herotxt greenlinr">I elevate the user experience with bold, accessible design.</h2>
+        <section id="about">
+            <div class="about-content">
+                <div class="content">
+                    <div class="hero">
+                        <img class="heroimg" src="images/about-image.png" alt="Erin smiles for the camera">
+                        <h2 class="herotxt greenlinr">I elevate the user experience with bold, accessible design.</h2>
+                    </div>
+
+                    <div class="card">
+                        <p>Hi! I’m Erin Lauderdale, I'm a UX/UI Bootcamp graduate and former theater production professional who's enthusiastic about designing visually appealing and accessible websites for all users. 
+                            <br>
+                                With a strong artistic eye for bold graphics, I approach each project with ambition and a willingness to learn, aiming to create aesthetically pleasing and user-friendly interfaces that provide a seamless experience for all. I'm excited to gain experience in this field and grow my skill set!
+                            </p>
+                    </div>
                 </div>
 
-                <div class="card">
-                    <p>Hi! I’m Erin Lauderdale, I'm a UX/UI Bootcamp graduate and former theater production professional who's enthusiastic about designing visually appealing and accessible websites for all users. 
-                        <br>
-                            With a strong artistic eye for bold graphics, I approach each project with ambition and a willingness to learn, aiming to create aesthetically pleasing and user-friendly interfaces that provide a seamless experience for all. I'm excited to gain experience in this field and grow my skill set!
-                        </p>
+                <a class="btn" href="">
+                    View My Work
+                </a>
+
+                <img class="footerimg" src="images/about-footer.png" alt="Pixel poloroid icon">
                 </div>
-            </div>
-
-            <a class="btn" href="">
-                View My Work
-            </a>
-
-            <img class="footerimg" src="images/about-footer.png" alt="Pixel poloroid icon">
-        </section>
+            </section>
 
 
 <br><br>
@@ -83,31 +85,31 @@
             <div class="skills">
 
                 <div class="skill-card pm">
-                    <h2 class="orangelinr">Project Management</h2>
+                    <h2 class="dkorangelinr">Project Management</h2>
                     <img class= "skillimg" src="images/project-management.png" alt="Pixel happy files icon">
                     <p>Experience in managing multiple projects simultaneously and ensuring deadlines are met.</p>
                 </div>
 
                 <div class="skill-card com">
-                    <h2 class="pinklin">Communication</h2>
+                    <h2 class="medorangelin">Communication</h2>
                     <img class= "skillimg" src="images/communication.png" alt="Pixel chat bubbles icon">
                     <p>Able to effectively communicate with clients, team members, and stakeholders digitally and face-to-face.</p>
                 </div>
 
                 <div class="skill-card cps">
-                    <h2 class="orangelinr">Creative Problem-Solving</h2>
+                    <h2 class="dkorangelinr">Creative Problem-Solving</h2>
                     <img class= "skillimg" src="images/problem-solving.png" alt="Pixel paintbrush and pencil icon">
                     <p>Adept and trained at finding creative solutions to complex problems.</p>
                 </div>
 
                 <div class="skill-card ds">
-                    <h2 class="pinklin">Design Software</h2>
+                    <h2 class="medorangelin">Design Software</h2>
                     <img class= "skillimg" src="images/design-software.png" alt="Pixel drawing tablet icon">
                     <p>Proficient in Figma, Adobe Creative Cloud, and Miro as well as project management software such as Google Drive and Trello.</p>
                 </div>
 
                 <div class="skill-card cc">
-                    <h2 class="orangelinr">Code Conversational</h2>
+                    <h2 class="dkorangelinr">Code Conversational</h2>
                     <img class= "skillimg" src="images/code-conversational.png" alt="Pixel coding window icon">
                     <p>Working knowledge of HTML, CSS, JavaScript, and Bootstrap as well as version control through Github.</p>
                 </div>
@@ -148,8 +150,8 @@
             <div class="portfolio">
 
                 <div class="portfolio-card">
-                    <div class="t1 greenlin webrad">
-                        <h2>Placeholder</h2>
+                    <div class="t1">
+                        <h2 class="pheader">Placeholder</h2>
                         <h3>Final Project goes here</h3>
                     </div>
                  
@@ -161,15 +163,15 @@
                         <img class="i2" src="images/pmba-button-m.png" alt="PMBA mobile website mockup">
                         <img class="i2w" src="images/pmba-button.png" alt="PMBA mobile website mockup">
                     
-                    <div class="t2 greenlinr webrad">
-                        <h2>Portland Metro Beekeepers Association</h2>
+                    <div class="t2">
+                        <h2 class="pheader">Portland Metro Beekeepers Association</h2>
                         <h3>High Fidelity Web Redesign</h3>
                     </div>
                 </div>   
 
                 <div class="portfolio-card">
-                    <div class="t3 greenlin webrad">
-                        <h2>FlavorSavor</h2>
+                    <div class="t3">
+                        <h2 class="pheader">FlavorSavor</h2>
                         <h3>User Research & Mid Fidelity Wireframe</h3>
                     </div>
                     
@@ -192,7 +194,14 @@
                     <img class="mail" src="images/mail-icon.png" alt="Contact">
                 </li>
                 <li class="footer-btn">
-                    <img class="linkedin" src="images/linkedin-icon.png" alt="Linkedin">
+                    <a href="https://www.linkedin.com/in/erin-lauderdale-505a34195/" target="_blank">
+                         <img class="linkedin" src="images/linkedin-icon.png" alt="Linkedin">
+                    </a>     
+                </li>
+                <li class="footer-btn">
+                    <a href="#header">
+                         <img class="up" src="images/up-icon.png" alt="Scroll to top">
+                    </a>
                 </li>
             </ul>
 
