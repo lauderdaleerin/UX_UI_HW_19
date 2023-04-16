@@ -9,7 +9,7 @@ $(document).ready(function() {
     });
 
 
-    
+
 $(document).ready(function() {
     02
         $(window).scroll( function(){
