@@ -66,9 +66,11 @@ p {
     background-image: radial-gradient(var(--medorange), rgba(215, 111, 0, 0), transparent 100px);
 }
 
+
 .dkorangerad {
     background-image: radial-gradient(var(--dkorange), rgba(215, 0, 186, 0), transparent 100px);
 }
+
 
 
 .dkorangelinr {
@@ -77,10 +79,12 @@ p {
     text-align: right;
 }
 
+
 .medorangelin {
     background-image: linear-gradient(to right, var(--dkorange), rgba(221, 173, 41, 0));
     padding: 10px;
 }
+
 
 .hero-content {
     display: flex;
@@ -88,6 +92,7 @@ p {
     align-items: center;
     justify-content: center;
 }
+
 
 .herotxt {
     position:relative;
@@ -103,6 +108,7 @@ p {
 }
 
 
+
 .heroc2 {
     position:absolute;
     top: -20px;
@@ -113,6 +119,7 @@ p {
     z-index:-1;
     animation: hero-animation 2s ease infinite alternate; 
 }
+
 
 .heroc3 {
     position:absolute;
@@ -126,6 +133,7 @@ p {
 
 }
 
+
 @keyframes hero-animation {
     from {background-image: radial-gradient(circle at center, 
     var(--dkorange), 
@@ -137,6 +145,7 @@ p {
     rgba(215, 0, 186, 0), 
     transparent);}
 }
+
 
 
 @media (min-width:800px) {
@@ -155,7 +164,8 @@ p {
     }
 }
 
-@media screen and (prefers-reduced-motion: reduce) { 
+
+@media (prefers-reduced-motion: reduce) { 
     .herotxt {
        background-image: radial-gradient(circle at center, 
         var(--medorange), 
