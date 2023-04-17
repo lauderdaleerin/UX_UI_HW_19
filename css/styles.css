@@ -14,7 +14,7 @@ body {
 
 
 h1 {
-    font-family: 'Nova Round';
+    font-family: 'Quantico', 'Sans Serif';
     font-size: 45px;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
    
@@ -31,7 +31,7 @@ h2 {
 
 
 h3 {
-    font-family: 'Nova Round';
+    font-family: 'Quantico', 'Sans Serif';
     font-size: 26px;
     font-weight: 100;
     margin:0;
@@ -96,56 +96,114 @@ p {
 
 .herotxt {
     position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     max-width: 375px;
     padding:8%;
-    background-image: radial-gradient(circle at center, 
-    var(--medorange), 
-    rgba(215, 0, 186, 0), 
-    transparent);
-    animation: hero-animation 2s ease 2s infinite alternate; 
-
 }
 
-
+.heroanimation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+.heroc1 {
+    position: absolute;
+    top:0;
+    left:0;
+    width:300;
+    height:300;
+    border-radius:50%;
+}
 
 .heroc2 {
     position:absolute;
+    display: flex;
     top: -20px;
     left: 0px;
     width:200px;
     height:200px;
     border-radius:50%;
-    z-index:-1;
-    animation: hero-animation 2s ease infinite alternate; 
+ 
 }
 
 
 .heroc3 {
     position:absolute;
-    right: 30px;
-    bottom:-40px;
+    left:170px;
+    top:120px;
     width:200px;
     height:200px;
     border-radius:50%;
-    z-index:-1;
-    animation: hero-animation 2s ease infinite alternate; 
-
 }
+
+.heroanimation::before,
+.heroanimation::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  animation-name: hero-animation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.heroc2::before, .heroc3::before {
+    background-image: radial-gradient(circle at center, 
+    rgba(254, 144, 91, 1), 
+    rgba(254, 144, 91, 0), 
+    transparent);
+    
+    animation-direction: alternate;
+  }
+  
+  .heroc2::after, .heroc3::after {
+    background-image: radial-gradient(circle at center, 
+    rgba(252, 179, 126,1),
+    rgba(252, 179, 126, 0), 
+    transparent);
+    
+    animation-direction: alternate-reverse;
+  }
+
+  .heroc1::before{
+    background-image: radial-gradient(circle at center, 
+    rgba(252, 179, 126,1),
+    rgba(252, 179, 126, 0), 
+    transparent);
+   
+    animation-direction: alternate;
+  }
+  
+  .heroc1::after{
+    background-image: radial-gradient(circle at center, 
+    rgba(254, 144, 91, 1), 
+    rgba(254, 144, 91, 0), 
+    transparent);
+    
+    animation-direction: alternate-reverse;
+  }
+
 
 
 @keyframes hero-animation {
-    from {background-image: radial-gradient(circle at center, 
-    var(--dkorange), 
-    rgba(215, 0, 186, 0), 
-    transparent);}
-
-    to {background-image: radial-gradient(circle at center, 
-    var(--medorange), 
-    rgba(215, 0, 186, 0), 
-    transparent);}
-}
-
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
 
 
 @media (min-width:800px) {
@@ -159,14 +217,18 @@ p {
     .heroc3 {
         width:300px;
         height:300px;
-        right:0px;
-        bottom:-70px;
+        left:250px;
+        bottom:-80px;
     }
 }
 
 
 @media (prefers-reduced-motion: reduce) { 
-    .herotxt {
+    .heroanimation {
+        animation: none;
+    }
+
+    .heroc1 {
        background-image: radial-gradient(circle at center, 
         var(--medorange), 
         rgba(215, 0, 186, 0), 
@@ -193,6 +255,7 @@ p {
 
 }
 
+
 .title-circles {
     display:flex;
     position:absolute;
@@ -200,6 +263,7 @@ p {
     height:100px;
     z-index: -1;
 }
+
 
 .circle {
     width:100px;
@@ -252,7 +316,8 @@ p {
 
 
 #active {
-    text-decoration: underline solid 5px var(--ltorange);
+    background-image: linear-gradient(to top, var(--ltorange), rgba(221, 173, 41, 0));
+    padding: 2px;
 }
 
 .about-content {
